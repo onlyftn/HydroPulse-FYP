@@ -19,7 +19,7 @@ import streamlit as st
 # --------------------------------------------------
 
 st.set_page_config(
-    page_title="HydroTwin | Model Comparison",
+    page_title="HydroPulse | Model Comparison",
     page_icon="📊",
     layout="wide"
 )
@@ -89,7 +89,7 @@ results = load_results()
 st.title("Model Comparison")
 
 st.caption(
-    "HydroTwin | Neelum–Jhelum Hydropower Plant "
+    "HydroPulse | Neelum–Jhelum Hydropower Plant "
     "| Generating Unit G1"
 )
 

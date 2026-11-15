@@ -516,3 +516,20 @@ div[data-testid="stDownloadButton"] > button:focus {
     }
 
 }
+
+/* Fix scheduler status notification text */
+section[data-testid="stSidebar"] [data-testid="stAlert"]
+[data-testid="stMarkdownContainer"] p {
+    color: #17324D !important;
+}
+
+/* HydroPulse - Fix notification text contrast */
+
+/* Applies to success, info, warning and error boxes */
+.stApp [data-testid="stAlert"] [data-testid="stMarkdownContainer"],
+.stApp [data-testid="stAlert"] [data-testid="stMarkdownContainer"] *,
+section[data-testid="stSidebar"] [data-testid="stAlert"] [data-testid="stMarkdownContainer"],
+section[data-testid="stSidebar"] [data-testid="stAlert"] [data-testid="stMarkdownContainer"] * {
+    color: #17324D !important;
+    -webkit-text-fill-color: #17324D !important;
+}

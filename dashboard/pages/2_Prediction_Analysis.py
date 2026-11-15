@@ -35,7 +35,7 @@ def format_malaysia_time(timestamp):
     return dt.strftime("%d %b %Y · %H:%M:%S MYT")
 
 st.set_page_config(
-    page_title="HydroTwin | Prediction Analysis",
+    page_title="HydroPulse | Prediction Analysis",
     page_icon="📈",
     layout="wide"
 )
@@ -60,7 +60,7 @@ if CSS_PATH.exists():
 st.title("Prediction Analysis")
 
 st.caption(
-    "HydroTwin | Neelum–Jhelum Hydropower Plant | "
+    "HydroPulse | Neelum–Jhelum Hydropower Plant | "
     "Generating Unit G1"
 )
 
