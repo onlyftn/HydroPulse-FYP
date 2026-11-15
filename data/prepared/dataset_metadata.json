@@ -1,0 +1,36 @@
+{
+    "project": "HydroTwin",
+    "components": [
+        "Turbine Guide Bearing",
+        "Upper Guide Bearing"
+    ],
+    "sampling_interval_minutes": 10,
+    "sequence_length": 36,
+    "history_hours": 6,
+    "forecast_horizon_minutes": 10,
+    "tgb_features": [
+        "tgb_vibration",
+        "tgb_temperature",
+        "unit_speed",
+        "generator_power"
+    ],
+    "ugb_features": [
+        "ugb_vibration",
+        "ugb_temperature",
+        "unit_speed",
+        "generator_power"
+    ],
+    "tgb_target": "tgb_vibration",
+    "ugb_target": "ugb_vibration",
+    "training_months": [
+        "June",
+        "July",
+        "August"
+    ],
+    "validation_month": "September",
+    "excluded_month": "October",
+    "test_month": "November",
+    "train_samples": 11674,
+    "validation_samples": 2543,
+    "test_samples": 3919
+}

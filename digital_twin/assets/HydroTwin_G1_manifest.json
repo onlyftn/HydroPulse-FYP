@@ -1,0 +1,931 @@
+{
+  "title": "HydroTwin G1 - conceptual vertical-axis hydropower unit",
+  "notice": "Engineering-inspired generic 3D conceptual model; not a verified dimensional CAD model of Neelum-Jhelum or any specific hydropower unit.",
+  "units": "arbitrary conceptual scale",
+  "bearing_components": {
+    "TGB": {
+      "mesh_prefix": "TGB__",
+      "center": [
+        0,
+        0,
+        3.22
+      ],
+      "color": "#358CFF",
+      "state_key": "TGB",
+      "label": "Turbine Guide Bearing"
+    },
+    "UGB": {
+      "mesh_prefix": "UGB__",
+      "center": [
+        0,
+        0,
+        9.63
+      ],
+      "color": "#F5AD3D",
+      "state_key": "UGB",
+      "label": "Upper Guide Bearing"
+    }
+  },
+  "groups": [
+    "generator",
+    "turbine",
+    "shaft",
+    "TGB",
+    "UGB",
+    "structure",
+    "instrument"
+  ],
+  "part_count": 178,
+  "parts": [
+    {
+      "name": "Unit_G1__foundation",
+      "group": "structure",
+      "triangles": 264
+    },
+    {
+      "name": "Unit_G1__foundation_top",
+      "group": "structure",
+      "triangles": 536
+    },
+    {
+      "name": "Turbine__flange_0.18",
+      "group": "turbine",
+      "triangles": 536
+    },
+    {
+      "name": "Turbine__flange_0.28",
+      "group": "turbine",
+      "triangles": 536
+    },
+    {
+      "name": "Turbine__flange_2.47",
+      "group": "turbine",
+      "triangles": 536
+    },
+    {
+      "name": "Turbine__cutaway_casing",
+      "group": "turbine",
+      "triangles": 572
+    },
+    {
+      "name": "Turbine__upper_draft_ring",
+      "group": "turbine",
+      "triangles": 536
+    },
+    {
+      "name": "Turbine__lower_draft_cone",
+      "group": "turbine",
+      "triangles": 400
+    },
+    {
+      "name": "Turbine__runner_hub",
+      "group": "turbine",
+      "triangles": 604
+    },
+    {
+      "name": "Turbine__runner_blade_01",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_02",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_03",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_04",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_05",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_06",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_07",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_08",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_09",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_10",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_blade_11",
+      "group": "turbine",
+      "triangles": 74
+    },
+    {
+      "name": "Turbine__runner_top_shroud",
+      "group": "turbine",
+      "triangles": 536
+    },
+    {
+      "name": "Shaft__central",
+      "group": "shaft",
+      "triangles": 264
+    },
+    {
+      "name": "Shaft__lower_coupling",
+      "group": "shaft",
+      "triangles": 264
+    },
+    {
+      "name": "Shaft__upper_coupling",
+      "group": "shaft",
+      "triangles": 264
+    },
+    {
+      "name": "Shaft__top_endcap",
+      "group": "shaft",
+      "triangles": 264
+    },
+    {
+      "name": "TGB__mounting_support",
+      "group": "TGB",
+      "triangles": 536
+    },
+    {
+      "name": "TGB__bearing_housing",
+      "group": "TGB",
+      "triangles": 536
+    },
+    {
+      "name": "TGB__inner_bushing",
+      "group": "TGB",
+      "triangles": 536
+    },
+    {
+      "name": "TGB__top_seal",
+      "group": "TGB",
+      "triangles": 536
+    },
+    {
+      "name": "TGB__bolt_01",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_02",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_03",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_04",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_05",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_06",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_07",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_08",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_09",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_10",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_11",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__bolt_12",
+      "group": "TGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__radial_support_01",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__radial_support_02",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__radial_support_03",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__radial_support_04",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__radial_support_05",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__radial_support_06",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__radial_support_07",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__radial_support_08",
+      "group": "TGB",
+      "triangles": 12
+    },
+    {
+      "name": "Generator__lower_frame",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__bottom_radial_plate",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__support_pillar_01",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_02",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_03",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_04",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_05",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_06",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_07",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_08",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_09",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__support_pillar_10",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__main_housing_cutaway",
+      "group": "generator",
+      "triangles": 764
+    },
+    {
+      "name": "Generator__stator_backiron_cutaway",
+      "group": "generator",
+      "triangles": 764
+    },
+    {
+      "name": "Generator__upper_rim",
+      "group": "generator",
+      "triangles": 668
+    },
+    {
+      "name": "Generator__lower_rim",
+      "group": "generator",
+      "triangles": 668
+    },
+    {
+      "name": "Generator__stator_winding_01",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_01",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_02",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_02",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_03",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_03",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_04",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_04",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_05",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_05",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_06",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_06",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_07",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_07",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_08",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_08",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_09",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_09",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_10",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_10",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_11",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_11",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_12",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_12",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_13",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_13",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_14",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_14",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_15",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_15",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_16",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_16",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_17",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_17",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_18",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_18",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_19",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_19",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_20",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_20",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__stator_winding_21",
+      "group": "generator",
+      "triangles": 208
+    },
+    {
+      "name": "Generator__stator_winding_cap_21",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_lower_plate",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_core",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_upper_plate",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_5.38",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_5.63",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_5.88",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_6.13",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_6.38",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_6.63",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_6.88",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_7.13",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_7.38",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_7.63",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_lamination_7.88",
+      "group": "generator",
+      "triangles": 536
+    },
+    {
+      "name": "Generator__rotor_pole_01",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_02",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_03",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_04",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_05",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_06",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_07",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_08",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_09",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_10",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_11",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_12",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_13",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_14",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_15",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__rotor_pole_16",
+      "group": "generator",
+      "triangles": 264
+    },
+    {
+      "name": "Generator__upper_support",
+      "group": "generator",
+      "triangles": 588
+    },
+    {
+      "name": "Generator__upper_spoke_01",
+      "group": "generator",
+      "triangles": 12
+    },
+    {
+      "name": "Generator__upper_spoke_02",
+      "group": "generator",
+      "triangles": 12
+    },
+    {
+      "name": "Generator__upper_spoke_03",
+      "group": "generator",
+      "triangles": 12
+    },
+    {
+      "name": "Generator__upper_spoke_04",
+      "group": "generator",
+      "triangles": 12
+    },
+    {
+      "name": "Generator__upper_spoke_05",
+      "group": "generator",
+      "triangles": 12
+    },
+    {
+      "name": "Generator__upper_spoke_06",
+      "group": "generator",
+      "triangles": 12
+    },
+    {
+      "name": "UGB__mounting_support",
+      "group": "UGB",
+      "triangles": 536
+    },
+    {
+      "name": "UGB__bearing_housing",
+      "group": "UGB",
+      "triangles": 536
+    },
+    {
+      "name": "UGB__inner_bushing",
+      "group": "UGB",
+      "triangles": 536
+    },
+    {
+      "name": "UGB__top_seal",
+      "group": "UGB",
+      "triangles": 536
+    },
+    {
+      "name": "UGB__bolt_01",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_02",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_03",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_04",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_05",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_06",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_07",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_08",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_09",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_10",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_11",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "UGB__bolt_12",
+      "group": "UGB",
+      "triangles": 188
+    },
+    {
+      "name": "TGB__instrument_box",
+      "group": "instrument",
+      "triangles": 12
+    },
+    {
+      "name": "TGB__instrument_lens",
+      "group": "instrument",
+      "triangles": 264
+    },
+    {
+      "name": "UGB__instrument_box",
+      "group": "instrument",
+      "triangles": 12
+    },
+    {
+      "name": "UGB__instrument_lens",
+      "group": "instrument",
+      "triangles": 264
+    },
+    {
+      "name": "Unit_G1__bolt_01",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_02",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_03",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_04",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_05",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_06",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_07",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_08",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_09",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_10",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_11",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_12",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_13",
+      "group": "Unit_G1",
+      "triangles": 248
+    },
+    {
+      "name": "Unit_G1__bolt_14",
+      "group": "Unit_G1",
+      "triangles": 248
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+:root {
+  --ht-bg: #07111f;
+  --ht-card: rgba(13, 31, 49, 0.94);
+  --ht-border: rgba(96, 165, 192, 0.19);
+  --ht-muted: #91a6b9;
+  --ht-text: #e9f2f8;
+  --ht-cyan: #42c8f5;
+  --ht-orange: #ffb45a;
+}
+
+.stApp {
+  background:
+    radial-gradient(ellipse 900px 500px at 5% -20%, rgba(36, 115, 154, 0.20), transparent 70%),
+    radial-gradient(ellipse 700px 400px at 110% 10%, rgba(24, 65, 93, 0.16), transparent 70%),
+    var(--ht-bg);
+  color: var(--ht-text);
+}
+
+section[data-testid="stSidebar"] {
+  background: #0a1929;
+  border-right: 1px solid var(--ht-border);
+}
+
+.block-container {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  max-width: 1550px;
+}
+
+h1, h2, h3, p {
+  letter-spacing: 0.01em;
+}
+
+.ht-brand {
+  font-weight: 800;
+  color: var(--ht-text);
+  font-size: 2.2rem;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+.ht-brand span { color: var(--ht-cyan); }
+.ht-subtitle {
+  color: var(--ht-muted);
+  font-size: .91rem;
+  padding-top: .4rem;
+}
+.ht-eyebrow {
+  font-size: .70rem;
+  letter-spacing: .19em;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: var(--ht-cyan);
+}
+.ht-header {
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--ht-border);
+  border-radius: 17px;
+  background: linear-gradient(110deg, rgba(18, 42, 64, 0.97), rgba(9, 27, 44, 0.88));
+  margin-bottom: 1rem;
+}
+.ht-card {
+  padding: 1rem 1.1rem;
+  background: var(--ht-card);
+  border: 1px solid var(--ht-border);
+  border-radius: 14px;
+  min-height: 115px;
+}
+.ht-card-title {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  color: var(--ht-muted);
+  margin-bottom: .5rem;
+}
+.ht-card-value {
+  font-size: 1.8rem;
+  font-weight: 750;
+  letter-spacing: -.045em;
+  line-height: 1.2;
+  color: var(--ht-text);
+}
+.ht-card-note {
+  font-size: .76rem;
+  color: var(--ht-muted);
+  margin-top: .35rem;
+}
+.ht-section-heading {
+  font-size: 1.05rem;
+  font-weight: 750;
+  margin: .8rem 0 .6rem;
+  color: var(--ht-text);
+}
+.ht-bearing {
+  border-radius: 14px;
+  padding: 1.05rem 1.15rem;
+  background: var(--ht-card);
+  border: 1px solid var(--ht-border);
+  margin-bottom: .75rem;
+}
+.ht-bearing-head { font-size: 1.05rem; font-weight: 750; margin-bottom: .6rem; }
+.ht-bearing-head.tgb { color: var(--ht-cyan); }
+.ht-bearing-head.ugb { color: var(--ht-orange); }
+.ht-bearing .ht-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: .42rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+  gap: 1rem;
+}
+.ht-bearing .ht-row:last-child { border-bottom: none; }
+.ht-bearing .ht-key { font-size: .85rem; color: var(--ht-muted); }
+.ht-bearing .ht-val { font-size: .96rem; font-weight: 650; color: var(--ht-text); }
+.ht-tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: .3rem .64rem;
+  background: rgba(255, 183, 79, .1);
+  border: 1px solid rgba(255, 183, 79, .27);
+  font-size: .74rem;
+  font-weight: 750;
+  color: #ffd39b;
+  margin-top: .8rem;
+}
+.ht-footnote { color: var(--ht-muted); font-size: .78rem; margin-top: .6rem; }
+div[data-testid="stPlotlyChart"] {
+  border: 1px solid var(--ht-border);
+  border-radius: 15px;
+  overflow: hidden;
+}
+div[data-testid="stAlert"] { border-radius: 12px; }
+button[kind="primary"] { background-color: #087ea7; }
+
+/* ================================================================
+   HydroTwin Accessibility & Contrast Fix (2026-10-14)
+   Targets Streamlit's default LIGHT widget text on DARK custom UI.
+   ================================================================ */
+
+/* Match Streamlit header/background to HydroTwin dark theme. */
+html,
+body,
+[data-testid="stAppViewContainer"],
+.stApp {
+  color: #e9f2f8 !important;
+}
+
+header[data-testid="stHeader"] {
+  background-color: #07111f !important;
+  border-bottom: 1px solid rgba(96, 165, 192, 0.15) !important;
+}
+
+header[data-testid="stHeader"] button,
+header[data-testid="stHeader"] svg {
+  color: #dcecf7 !important;
+}
+
+/* Sidebar body and all Streamlit markdown/headings. */
+section[data-testid="stSidebar"] {
+  background: #0a1929 !important;
+  color: #e9f2f8 !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h1,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h2,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h3,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h4,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] strong,
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
+  color: #e9f2f8 !important;
+}
+
+/* Captions are less prominent but still comfortably readable. */
+section[data-testid="stSidebar"] [data-testid="stCaptionContainer"],
+section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] p,
+section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] span,
+section[data-testid="stSidebar"] small {
+  color: #b7cfdf !important;
+}
+
+/* Repeated radio controls and their labels. */
+section[data-testid="stSidebar"] div[role="radiogroup"] label {
+  color: #e9f2f8 !important;
+  font-size: 0.98rem !important;
+  font-weight: 550 !important;
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] label p,
+section[data-testid="stSidebar"] div[role="radiogroup"] label [data-testid="stMarkdownContainer"] {
+  color: #e9f2f8 !important;
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] label:hover {
+  background: rgba(66, 200, 245, 0.09);
+  border-radius: 8px;
+}
+
+section[data-testid="stSidebar"] hr {
+  border-color: rgba(148, 186, 210, 0.25) !important;
+}
+
+/* Streamlit alert panels, e.g., 'scheduler not connected'. */
+section[data-testid="stSidebar"] [data-testid="stAlert"] {
+  border: 1px solid rgba(245, 183, 87, 0.24) !important;
+}
+
+/* Stronger main-content text & controls for presentation screens. */
+.stApp [data-testid="stWidgetLabel"] p,
+.stApp div[data-testid="stMarkdownContainer"] > p {
+  color: #dce9f5;
+}
+
+.ht-subtitle,
+.ht-card-note,
+.ht-footnote {
+  color: #adc6d8;
+}
+
+.ht-bearing .ht-key {
+  color: #b6cede;
+  font-size: 0.90rem;
+}
+
+.ht-bearing .ht-val {
+  color: #f4faff;
+}
+
+[data-testid="stMainBlockContainer"],
+.block-container {
+    padding-top: 0.5rem !important;
+}
+
+[data-testid="stHeader"],
+[data-testid="stAppHeader"] {
+    height: 2rem !important;
+    min-height: 2rem !important;
+}
+
+
+/* ================================================================
+   HydroTwin - Compact Professional Sidebar
+   Reduce unnecessary vertical spacing without changing functionality
+   ================================================================ */
+
+/* Reduce spacing between sidebar content blocks */
+section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {
+    gap: 0.65rem !important;
+}
+
+/* Reduce space surrounding horizontal separators */
+section[data-testid="stSidebar"] hr {
+    margin-top: 0.35rem !important;
+    margin-bottom: 0.35rem !important;
+}
+
+/* Reduce spacing for Streamlit divider elements */
+section[data-testid="stSidebar"] [data-testid="stDivider"] {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+/* Reduce unnecessary sidebar container padding */
+section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+    margin-top: -1rem !important;
+}
+
+/* Preserve comfortable spacing for clickable radio controls */
+section[data-testid="stSidebar"] div[role="radiogroup"] label {
+    min-height: 1.75rem;
+}
+
+/* HydroTwin - Inspection Notes Input */
+
+.stApp [data-testid="stTextArea"] [data-baseweb="textarea"],
+.stApp [data-testid="stTextArea"] textarea {
+    background-color: #f0f2f6 !important;
+    color: #111111 !important;
+    -webkit-text-fill-color: #111111 !important;
+    caret-color: #111111 !important;
+}
+
+.stApp [data-testid="stTextArea"] textarea::placeholder {
+    color: #667085 !important;
+    -webkit-text-fill-color: #667085 !important;
+}
+
+/* Download button styling */
+div[data-testid="stDownloadButton"] > button {
+    background: linear-gradient(90deg, #0f6d8c, #1293bb) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(66, 200, 245, 0.35) !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    font-size: 0.98rem !important;
+    min-height: 48px !important;
+    width: 100% !important;
+}
+
+div[data-testid="stDownloadButton"] > button:hover {
+    background: linear-gradient(90deg, #1293bb, #18a9d4) !important;
+    color: #ffffff !important;
+    border-color: rgba(66, 200, 245, 0.55) !important;
+}
+
+div[data-testid="stDownloadButton"] > button:focus {
+    color: #ffffff !important;
+    box-shadow: 0 0 0 0.18rem rgba(66, 200, 245, 0.22) !important;
+}
+
+/* HydroTwin - Maintenance Expander Headers */
+
+.stApp [data-testid="stExpander"] summary,
+.stApp [data-testid="stExpander"] details[open] summary,
+.stApp [data-testid="stExpander"] summary:hover,
+.stApp [data-testid="stExpander"] summary:focus,
+.stApp [data-testid="stExpander"] summary:focus-visible {
+    background-color: #0d1f31 !important;
+    color: #e9f2f8 !important;
+}
+
+/* Keep expander labels and arrows readable */
+.stApp [data-testid="stExpander"] summary p,
+.stApp [data-testid="stExpander"] summary span,
+.stApp [data-testid="stExpander"] summary svg {
+    color: #e9f2f8 !important;
+}
+
+/* =========================================
+   HydroTwin - Mobile Responsive Typography
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    /* Compact page titles on smartphones */
+    .stApp h1 {
+        font-size: 1.7rem !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.02em !important;
+    }
+
+}
+
+
+/* =========================================
+   HydroTwin - Responsive Inspection Records
+   ========================================= */
+
+/* Desktop and tablet: Hide mobile cards */
+@media (min-width: 601px) {
+
+    .st-key-ht_recent_inspections_mobile {
+        display: none !important;
+    }
+
+}
+
+/* Smartphones: Hide desktop table */
+@media (max-width: 600px) {
+
+    .st-key-ht_recent_inspections_desktop {
+        display: none !important;
+    }
+
+}
+
+/* =========================================
+   HydroTwin - Responsive Maintenance Actions
+   ========================================= */
+
+/* Desktop and tablet: Hide mobile action cards */
+@media (min-width: 601px) {
+
+    .st-key-ht_maintenance_actions_mobile {
+        display: none !important;
+    }
+
+}
+
+/* Smartphones: Hide desktop actions table */
+@media (max-width: 600px) {
+
+    .st-key-ht_maintenance_actions_desktop {
+        display: none !important;
+    }
+
+}
+
+/* =========================================
+   HydroTwin - Responsive Maintenance History
+   ========================================= */
+
+/* Desktop and tablet: Hide mobile inspection cards */
+@media (min-width: 601px) {
+
+    .st-key-ht_history_mobile_cards {
+        display: none !important;
+    }
+
+}
+
+/* Smartphones: Hide desktop inspection table */
+@media (max-width: 600px) {
+
+    .st-key-ht_history_desktop_table {
+        display: none !important;
+    }
+
+}
+
+/* =========================================
+   HydroTwin - Responsive Model Performance
+   ========================================= */
+
+/* Desktop and tablet: Hide mobile model cards */
+@media (min-width: 601px) {
+
+    .st-key-ht_model_performance_mobile {
+        display: none !important;
+    }
+
+}
+
+/* Smartphones: Hide desktop performance table */
+@media (max-width: 600px) {
+
+    .st-key-ht_model_performance_desktop {
+        display: none !important;
+    }
+
+}
+
+/* =========================================
+   HydroTwin - Responsive Model Selection
+   ========================================= */
+
+/* Desktop and tablet: Hide mobile selection cards */
+@media (min-width: 601px) {
+
+    .st-key-ht_model_selection_mobile {
+        display: none !important;
+    }
+
+}
+
+/* Smartphones: Hide desktop selection table */
+@media (max-width: 600px) {
+
+    .st-key-ht_model_selection_desktop {
+        display: none !important;
+    }
+
+}
+
+
+/* =========================================
+   HydroTwin - Responsive Simulation Comparison
+   ========================================= */
+
+/* Desktop and tablet: Hide mobile comparison */
+@media (min-width: 601px) {
+
+    .st-key-ht_simulation_comparison_mobile {
+        display: none !important;
+    }
+
+}
+
+/* Smartphones: Hide desktop comparison table */
+@media (max-width: 600px) {
+
+    .st-key-ht_simulation_comparison_desktop {
+        display: none !important;
+    }
+
+}
+
+/* =========================================
+   HydroTwin - Tablet Maintenance Records
+   ========================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    /* Show inspection and maintenance cards */
+    .st-key-ht_recent_inspections_mobile,
+    .st-key-ht_maintenance_actions_mobile {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Hide wide maintenance tables */
+    .st-key-ht_recent_inspections_desktop,
+    .st-key-ht_maintenance_actions_desktop {
+        display: none !important;
+    }
+
+}
+
+
+/* =========================================
+   HydroTwin - Tablet Maintenance History
+   ========================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    /* Show inspection history cards on tablets */
+    .st-key-ht_history_mobile_cards {
+        display: block !important;
+    }
+
+    /* Hide compressed inspection history table */
+    .st-key-ht_history_desktop_table {
+        display: none !important;
+    }
+
+}

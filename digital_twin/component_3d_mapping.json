@@ -1,0 +1,19 @@
+{
+    "G1": {
+        "name": "Hydropower Generating Unit G1",
+        "components": {
+            "UGB": {
+                "label": "Upper Guide Bearing",
+                "position": "Upper generator shaft",
+                "state_key": "UGB",
+                "color": "#F59E0B"
+            },
+            "TGB": {
+                "label": "Turbine Guide Bearing",
+                "position": "Lower turbine shaft",
+                "state_key": "TGB",
+                "color": "#3B82F6"
+            }
+        }
+    }
+}
